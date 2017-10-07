@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="389.0" style="-fx-background-color: linear-gradient(skyblue,white);" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tipfxml.FXMLDocumentController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="l1" alignment="CENTER" style="-fx-font-size: 20; -fx-effect: Dropshadow(three-pass-box , rgba(0,0,0,0.7) , 2, 0.5 , 0 , 0 ); -fx-weight: bold;" text="Welcome" GridPane.halignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label text="Amount" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+      <Label fx:id="l2" text="15%" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+      <Label text="Tip" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Label text="Total" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Button fx:id="btn" mnemonicParsing="false" onMousePressed="#press" style="-fx-font-family: Verdana; -fx-font-weight: bold;" text="Calculate Now!" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" GridPane.valignment="BASELINE" />
+      <Slider fx:id="s1" majorTickUnit="1.0" max="30.0" minorTickCount="0" snapToTicks="true" value="15.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="tf1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="tf2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="tf3" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+   </children>
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </padding>
+</GridPane>
